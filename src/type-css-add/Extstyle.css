@@ -8,15 +8,14 @@
     background-color: #f0f2f5;
 }
 
-/* Updated class name from .product to .car */
 .car {
     width: 280px;
-    background: white;
+    background: rgba(209, 209, 209, 0.219);
     text-align: center;
     border-radius: 12px;
     padding: 20px;
     border: 1px solid #ddd;
-    box-shadow: 0px 5px 12px rgba(0, 0, 0, 0.1);
+    box-shadow: 0px 5px 12px rgb(168, 168, 168);
     transition: transform 0.3s ease, box-shadow 0.3s ease;
     overflow: hidden;
 }
@@ -28,6 +27,7 @@
 
 .image-container {
     width: 100%;
+    height: 140px;
     display: flex;
     justify-content: center;
 }
@@ -85,7 +85,6 @@
     line-height: 1.4;
 }
 
-/* Enhanced button styling */
 .add-to-cart {
     margin-top: 15px;
     padding: 12px 18px;
