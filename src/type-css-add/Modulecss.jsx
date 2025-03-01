@@ -26,7 +26,7 @@ const Modulecss = () => {
           <p>Phone: +91 98765 43210</p>
           <p>Address: Mumbai, India</p>
           <div className={styles.socialIcons}>
-            <a  href="#"><i  className="fab fa-facebook"></i></a>
+            <a href="#"><i className="fab fa-facebook"></i></a>
             <a href="#"><i className="fab fa-instagram"></i></a>
             <a href="#"><i className="fab fa-twitter"></i></a>
           </div>
