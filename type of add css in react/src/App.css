@@ -1,0 +1,91 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, sans-serif;
+}
+
+.App-header {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #111;
+}
+
+.car-container {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+}
+
+.car-image {
+  width: 100vw;
+  height: 100vh;
+  object-fit: cover;
+  filter: brightness(80%);
+  transition: filter 0.3s ease-in-out;
+}
+
+.car-container:hover .car-image {
+  filter: brightness(100%);
+}
+
+.car-content {
+  position: absolute;
+  bottom: 15%;
+  left: 50%;
+  transform: translateX(-50%);
+  text-align: center;
+  background: rgba(0, 0, 0, 0.8);
+  padding: 20px;
+  border-radius: 12px;
+  width: 85%;
+  max-width: 500px;
+  box-shadow: 0px 4px 10px rgba(255, 255, 255, 0.2);
+  animation: fadeIn 0.8s ease-in-out;
+}
+
+.car-content h5 {
+  color: #f1c40f;
+  font-size: 24px;
+  margin-bottom: 8px;
+}
+
+.car-content p {
+  color: white;
+  font-size: 16px;
+  line-height: 1.5;
+  margin-bottom: 15px;
+}
+
+a {
+  text-decoration: none;
+  color: #000;
+  font-weight: bold;
+  background-color: #f1c40f;
+  padding: 12px 20px;
+  border-radius: 6px;
+  display: inline-block;
+  transition: background 0.3s ease, transform 0.2s ease;
+}
+
+a:hover {
+  background-color: #d4ac0d;
+  transform: scale(1.05);
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateX(-50%) translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(-50%) translateY(0);
+  }
+}
+
+
