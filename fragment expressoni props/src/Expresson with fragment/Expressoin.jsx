@@ -28,6 +28,7 @@ const Expressoin = () => {
     <h1>Absolute of -10: {Math.abs(-10)}</h1> {/* Absolute (positive) value of -10 */}
     <h1>Max of 10, 20, 30: {Math.max(10, 20, 30)}</h1> {/* Returns the highest number */}
     <h1>Min of 10, 20, 30: {Math.min(10, 20, 30)}</h1> {/* Returns the lowest number */}
+    
 </>
   )
 }
