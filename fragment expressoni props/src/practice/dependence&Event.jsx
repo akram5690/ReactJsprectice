@@ -3,6 +3,11 @@ import Button from 'react-bootstrap/Button';
 import Card from 'react-bootstrap/Card';
 
 const Dependence = () => {
+    const btn = document.getElementById("btn");
+    const changecolor = () => {
+        btn.style.color = "white";
+        btn.style.backgroundColor = "black";
+    }
     return (
         <>
             <Card style={{ width: "18rem", margin: "20px auto", boxShadow: "0 4px 8px rgba(0,0,0,0.2)", borderRadius: "10px" }}>
@@ -13,10 +18,10 @@ const Dependence = () => {
                 />
                 <Card.Body>
                     <Card.Title>Delicious Burger</Card.Title>
-                    <Card.Text>
+                    <Card.Text style={{color: "black"}}>
                         Savor the juiciness of our signature burger, crafted with fresh ingredients and bursting with flavor.
                     </Card.Text>
-                    <Button variant="primary">Order Now</Button>
+                    <Button id='btn' variant="primary" onClick={changecolor}>Order Now</Button>
                 </Card.Body>
             </Card>
         </>
