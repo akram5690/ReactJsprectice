@@ -1,15 +1,15 @@
 import React from "react";
 import "./App.css";
 import Navigationbar from "./headersection/Navigationbar";
-import Cardanlys from "./main/Cardanlys";
+// import Cardanlys from "./main/Cardanlys";
 import Maincont from "./maincontener/maincont";
 
 function App() {
   
   return (
-    <div className="App app-container" style={{backgroundColor: "#333"}}>
+    <div className="App app-container">
       <Navigationbar />
-      <Cardanlys />
+      {/* <Cardanlys /> */}
       <Maincont />
     </div>
   );

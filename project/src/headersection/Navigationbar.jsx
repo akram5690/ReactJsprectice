@@ -4,6 +4,7 @@ import Nav from 'react-bootstrap/Nav';
 import Navbar from 'react-bootstrap/Navbar';
 import Navlogic from './navlogic';
 import logo from '../images/logo.png';
+import Cardanlys from '../main/Cardanlys';
 
 const Navigationbar = () => {
   return (
@@ -13,7 +14,7 @@ const Navigationbar = () => {
       backgroundSize: "cover",
       backgroundPosition: "center",
       width: "100%",
-      height: "100vh"
+      height: "fit-content"
     }}
   >
     <Navbar expand="lg" className="navbar navbar-dark bg-white py-3 shadow-lg opacity-50">
@@ -29,9 +30,10 @@ const Navigationbar = () => {
     </Navbar>
 
     <div className="d-flex flex-column justify-content-center align-items-center h-100">
-        <h3 className="display-5 fw-bold text-danger">Explore humans in</h3>
+        <h3 className="display-5 fw-bold text-primary my-5">Explore humans in</h3>
         <h1 className="display-1 fw-bold text-uppercase" style={{fontSize: "20rem", fontFamily:"initial", textShadow: "white 0px 0px 20px",
     color: "#d5d4d4"}}>SPACE</h1>
+    <Cardanlys />
       </div>
     </header>
   );

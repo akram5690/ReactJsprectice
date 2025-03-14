@@ -23,16 +23,18 @@ const Cardlogic = () => {
   ];
 
   return (
-    <div className="container my-4">
+    <div className="container my-5 opacity-75">
       <div className="row g-4 justify-content-center">
         {cardData.map(({ icon, heading, para }, index) => (
-          <div key={index} className="col-md-4 col-sm-6 d-flex justify-content-center">
-            <Card className="text-white bg-primary shadow-lg rounded text-center p-3 d-flex flex-column h-100" style={{ width: "18rem" }}>
-              <Card.Header className="fs-3">{icon}</Card.Header>
+          <div key={index} className="col-lg-4 col-md-6 col-sm-12 d-flex justify-content-center">
+            <Card className="text-white bg-primary shadow-lg rounded text-center p-4 d-flex flex-column h-100" style={{ width: "22rem" }}>
+              <Card.Header className="fs-3 d-flex justify-content-center align-items-center mb-3">
+                {icon}
+              </Card.Header>
               <Card.Body className="d-flex flex-column">
-                <Card.Title className="fs-5 fw-bold">{heading}</Card.Title>
-                <Card.Text className="small">{para}</Card.Text>
-                <Button variant="light" size="sm" className="fw-bold mt-auto">
+                <Card.Title className="fs-5 fw-bold mb-3">{heading}</Card.Title>
+                <Card.Text className="small flex-grow-1">{para}</Card.Text>
+                <Button variant="light" size="sm" className="fw-bold mt-3">
                   Learn More
                 </Button>
               </Card.Body>
