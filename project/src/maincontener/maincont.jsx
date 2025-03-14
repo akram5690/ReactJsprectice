@@ -2,9 +2,7 @@ import React from "react";
 import Mainlogic from "./mainlogic";
 import { Carousel } from "bootstrap";
 
-const Maincont = () => {
-  
-  
+const Maincont = () => {  
   const artsec = [
     {
       infoclass : "mi-info",
@@ -40,7 +38,7 @@ const Maincont = () => {
     <div className="container d-flex flex-column align-items-center justify-content-center min-vh-100 my-5">
       <div className="row g-4 justify-content-center">
         {/* Pass artsec data as props to Mainlogic */}
-        <Mainlogic myplanets={artsec} imgcont={imgcont} />
+        <Mainlogic myplanets={artsec}/>
 
       </div>
     </div>
