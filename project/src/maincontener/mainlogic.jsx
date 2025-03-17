@@ -1,59 +1,82 @@
 import React from "react";
+import "./style.css";
 import Card from "react-bootstrap/Card";
+import Carousel from "react-bootstrap/Carousel";
+import Apollo1 from "../images/7-apollo11astr.jpg";
+import Apollo2 from "../images/unnamed.jpg";
+import Apollo3 from "../images/NASA_ApolloLanderOnMom-scaled.jpg";
 
+const Mainlogic = ({ myplanets }) => {
+  const cardStyle = {
+    width: "180px",
+    height: "180px",
+    overflow: "hidden",
+    borderRadius: "50%",
+    border: "2px solid white"
+  };
 
+  const imageStyle = {
+    width: "100%",
+    height: "100%",
+    objectFit: "cover",
+  };
+   const sliderimage = {
+    width: "15rem",
+    height: "14.2rem",
+    objectFit: "cover",
+    borderRadius: "15px"
+  };
 
-const Mainlogic = ({ myplanets}) => {
   return (
     <div className="d-flex flex-column align-items-center justify-content-center min-vh-100">
-      {myplanets.map(({ img, title, text, link, infoclass}, index) => (
-        <div key={index} className="d-flex justify-content-center align-items-center">
+      {myplanets.map(({ img, title, text, link, infoclass, sliderclass }, index) => (
+        <div key={index} className={`col-12 d-flex justify-content-between mb-4 align-items-center ${infoclass} ${sliderclass}`} style={{gap: "100px"}}>
 
-          <div className={`col-12 d-flex justify-content-center mb-4 ${infoclass || ""}`}>
-            <Card
-              className="shadow-lg text-center overflow-hidden"
-              style={{
-                width: "100%",
-                maxWidth: "1200px",
-                borderRadius: "15px",
-                background: "linear-gradient(135deg, #1e3c72 0%, #2a5298 100%)",
-                color: "white",
-                flexDirection: "row"
-              }}
-            >
-              {/* Image container with same fixed size */}
+          {/* Unique Carousel ID for each section */}
+          <div id={`carouselExample${index}`} className="carousel slide">
+            <div className="carousel-inner">
+              <div className="carousel-item active">
+                <img src={Apollo1} style={sliderimage} alt="Earth" />
+              </div>
+              <div className="carousel-item">
+                <img src={Apollo2} style={sliderimage} className="d-block w-100" alt="Earth" />
+              </div>
+              <div className="carousel-item">
+                <img src={Apollo3} style={sliderimage} className="d-block w-100" alt="Earth" />
+              </div>
+            </div>
+            <button className="carousel-control-prev" type="button" data-bs-target={`#carouselExample${index}`} data-bs-slide="prev">
+              <span className="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span className="visually-hidden">Previous</span>
+            </button>
+            <button className="carousel-control-next" type="button" data-bs-target={`#carouselExample${index}`} data-bs-slide="next">
+              <span className="carousel-control-next-icon" aria-hidden="true"></span>
+              <span className="visually-hidden">Next</span>
+            </button>
+            </div>
+
+
+            {/* Card Section */}
+            <Card className="shadow-lg text-center cardblock d-flex flex-column flex-md-row position-relative" style={{height: "230px"}}>
+              {/* Image Container */}
               <div className="d-flex justify-content-center p-3">
-                <div
-                  style={{
-                    width: "180px",
-                    height: "180px",
-                    overflow: "hidden",
-                    borderRadius: "50%",
-                    border: "2px solid white"
-                  }}
-                >
-                  <img
-                    src={img}
-                    alt={title}
-                    style={{
-                      width: "100%",
-                      height: "100%",
-                      objectFit: "cover", // Ensures same size without distortion
-                    }}
-                  />
+                <div style={cardStyle}>
+                  <img src={img} alt={title} style={imageStyle} />
                 </div>
               </div>
 
+              {/* Card Body */}
               <Card.Body className="d-flex flex-column justify-content-center p-4">
-                <Card.Title className="fw-bold fs-3">{title}</Card.Title>
+                <Card.Title className="fw-bold fs-3 text-white">{title}</Card.Title>
                 <Card.Text className="text-light fs-5">{text}</Card.Text>
-                <button className="btn">
-                  <a href={link} target="_blank" rel="noopener noreferrer" className="text-light">Learn More</a>
+                <button className="btn btn-primary fw-bold mt-2">
+                  <a href={link} target="_blank" rel="noopener noreferrer" className="text-white text-decoration-none">
+                    Learn More
+                  </a>
                 </button>
               </Card.Body>
             </Card>
           </div>
-        </div>
       ))}
     </div>
   );
