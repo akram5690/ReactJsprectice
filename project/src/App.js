@@ -1,10 +1,10 @@
 import React from "react";
 import "./App.css";
 import Navigationbar from "./headersection/Navigationbar";
-// import Cardanlys from "./main/Cardanlys";
 import Maincont from "./maincontener/maincont";
 import Mission from "./upcomingmission/Mission";
 import Achivments from "./Achivment/Achivments";
+import Footer from "./footer/Footer";
 
 function App() {
 
@@ -14,6 +14,7 @@ function App() {
       <Maincont />
       <Mission />
       <Achivments />
+      <Footer />
     </div>
   );
 }

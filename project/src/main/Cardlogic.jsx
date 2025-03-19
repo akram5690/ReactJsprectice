@@ -27,7 +27,12 @@ const Cardlogic = () => {
       <div className="row g-4 justify-content-center">
         {cardData.map(({ icon, heading, para }, index) => (
           <div key={index} className="col-lg-4 col-md-6 col-sm-12 d-flex justify-content-center">
-            <Card className="text-white bg-primary shadow-lg rounded text-center p-4 d-flex flex-column h-100" style={{ width: "22rem" }}>
+            <Card
+              className="text-white bg-primary shadow-lg rounded text-center p-4 d-flex flex-column h-100"
+              style={{ width: "22rem", transition: "transform 0.3s ease-in-out" }}
+              onMouseEnter={(e) => (e.currentTarget.style.transform = "scale(1.05)")}
+              onMouseLeave={(e) => (e.currentTarget.style.transform = "scale(1)")}
+            >
               <Card.Header className="fs-3 d-flex justify-content-center align-items-center mb-3">
                 {icon}
               </Card.Header>
