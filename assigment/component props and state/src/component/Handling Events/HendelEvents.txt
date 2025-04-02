@@ -1,0 +1,10 @@
+Question 1: How are events handled in React compared to vanilla JavaScript? Explain the
+concept of synthetic events.
+Ans: In React, events are handled using a system of synthetic events, which are cross-browser wrappers around native JavaScript events, ensuring consistent behavior across different browsers. This differs from vanilla JavaScript where you directly interact with the DOM and its events. 
+
+Question 2: What are some common event handlers in React.js? Provide examples of
+onClick, onChange, and onSubmit.
+Ans: In React.js, common event handlers include onClick for clicks, onChange for input changes, and onSubmit for form submissions, with examples provided below to demonstrate their usage. 
+
+Question 3: Why do you need to bind event handlers in class components?
+Ans:While working on React, you must have come across controlled components and event handlers. We need to bind these methods to the component instance using .bind() in our custom component’s constructor.

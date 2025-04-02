@@ -1,0 +1,7 @@
+Question 1: What is conditional rendering in React? How can you conditionally render
+elements in a React component?
+Ans: Conditional rendering in React works the same way conditions work in JavaScript. Use JavaScript operators like if or the conditional operator to create elements representing the current state, and let React update the UI to match them
+
+Question 2: Explain how if-else, ternary operators, and && (logical AND) are used in JSXfor
+conditional rendering.
+Ans:In JSX, you can achieve conditional rendering using if-else statements, ternary operators (condition ? true : false), and the logical AND operator (&&) to render content based on conditions. 

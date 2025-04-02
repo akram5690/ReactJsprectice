@@ -1,0 +1,6 @@
+Question 1: How do you render a list of items in React? Why is it important to use keyswhen
+rendering lists?
+Ans: Keys are crucial for efficient updates and re-renders, helping React identify which items have changed, been added, or removed. 
+
+Question 2: What are keys in React, and what happens if you do not provide a unique key?
+Ans: React uses the unique key value of each list item to keep track of it. If you neglect to add them, React uses the index value of each item as a default. Although this sounds like a logical solution, the React docs explain that this can lead to performance issues and confusing bugs.

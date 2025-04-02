@@ -1,0 +1,8 @@
+Question 1: What is JSX in React.js? Why is it used?
+Ans: JSX allows us to write HTML elements in JavaScript and place them in the DOM without any createElement() and/or appendChild() methods. JSX converts HTML tags into react elements. You are not required to use JSX, but JSX makes it easier to write React applications.
+
+Question 2: How is JSX different from regular JavaScript? Can you write JavaScript insideJSX?
+Ans:JSX lets you write HTML-like markup inside a JavaScript file, keeping rendering logic and content in the same place. Sometimes you will want to add a little JavaScript logic or reference a dynamic property inside that markup. In this situation, you can use curly braces in your JSX to open a window to JavaScript
+
+Question 3: Discuss the importance of using curly braces {} in JSX expressions.
+Ans:Curly braces let you bring JavaScript logic and variables into your markup. They work inside the JSX tag content or immediately after = in attributes. {{ and }} is not special syntax: it's a JavaScript object tucked inside JSX curly braces

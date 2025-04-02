@@ -1,0 +1,9 @@
+Question 1: What is React.js? How is it different from other JavaScript frameworks and
+libraries?
+Ans: React is a library focused on the view layer, whereas Angular provides a complete framework with its own set of tools and features. React’s simplicity and ease of integration with existing projects make it a popular choice for many developers, especially for smaller projects.       
+
+Question 2: Explain the core principles of React such as the virtual DOM and componentbased architecture
+Ans:React's core principles revolve around a component-based architecture and the use of a virtual DOM for efficient rendering, enabling developers to build reusable, maintainable, and performant user interfaces. 
+
+Question 3: What are the advantages of using React.js in web development?
+Ans:  component-based architecture, reusable components, fast rendering with a Virtual DOM, and a large, active community

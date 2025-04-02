@@ -1,0 +1,8 @@
+Question 1: What are props in React.js? How are props different from state?
+Ans: Props are used to pass data from a parent component to a child component, while state is used to manage data within a component. Props are immutable and cannot be changed within a component, while state is mutable and can be updated using the setState function.
+
+Question 2: Explain the concept of state in React and how it is used to manage componentdata.
+State can be defined as an object that houses data that changes over time in an application. In other words, state is a dynamic data storage that provides a mechanism for components to manage, keep track of changing data, and trigger re-rendering when it is updated.
+
+Question 3: Why is this.setState() used in class components, and how does it work?
+Ans: State can be updated in response to event handlers, server responses, or prop changes. This is done using the setState() method. The setState() method enqueues all of the updates made to the component state and instructs React to re-render the component and its children with the updated state.
