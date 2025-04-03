@@ -1,7 +1,23 @@
-import React from 'react'
-import { NavLink } from 'react-router-dom'
+import React, { useState } from 'react'
+import { NavLink, useNavigate } from 'react-router-dom'
 
 const Loginpage = () => {
+    let navigat = useNavigate()
+    let [logindata, setlogindata] = useState({
+        email : "",
+        pass : ""
+    })
+
+    let change = () => {
+        setlogindata({ ...logindata, [e.target.name]: e.target.value });
+    }
+
+    let setlogin = (e) => {
+        e.preventDefault();
+        let storedata = JSON.parse(localStorage.getItem("userdata")) || []
+
+    }
+
     return (
         <>
             <div className="flex min-h-full flex-col justify-center px-6 py-12 lg:px-8">
@@ -10,15 +26,15 @@ const Loginpage = () => {
                 </div>
 
                 <div className="mt-10 sm:mx-auto sm:w-full sm:max-w-sm">
-                    <form className="space-y-6" action="#" method="POST">
+                    <form className="space-y-6" onSubmit={setlogin} action="#" method="POST">
                         <div>
                             <div className="mt-2">
-                                <input type="text" placeholder='Enter Email' className="block w-full rounded-md bg-white px-3 py-1.5 text-base text-gray-900 outline-1 -outline-offset-1 outline-gray-300 placeholder:text-gray-400 focus:outline-2 focus:-outline-offset-2 focus:outline-indigo-600 sm:text-sm/6" />
+                                <input type="text" onChange={change} placeholder='Enter Email' className="block w-full rounded-md bg-white px-3 py-1.5 text-base text-gray-900 outline-1 -outline-offset-1 outline-gray-300 placeholder:text-gray-400 focus:outline-2 focus:-outline-offset-2 focus:outline-indigo-600 sm:text-sm/6" />
                             </div>
                         </div>
                         <div>
                             <div className="mt-2">
-                                <input type="password" placeholder='Enter password' className="block w-full rounded-md bg-white px-3 py-1.5 text-base text-gray-900 outline-1 -outline-offset-1 outline-gray-300 placeholder:text-gray-400 focus:outline-2 focus:-outline-offset-2 focus:outline-indigo-600 sm:text-sm/6" />
+                                <input type="password" onChange={change} placeholder='Enter password' className="block w-full rounded-md bg-white px-3 py-1.5 text-base text-gray-900 outline-1 -outline-offset-1 outline-gray-300 placeholder:text-gray-400 focus:outline-2 focus:-outline-offset-2 focus:outline-indigo-600 sm:text-sm/6" />
                             </div>
                         </div>
                         <div>
