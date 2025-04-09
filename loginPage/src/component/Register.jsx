@@ -38,16 +38,15 @@ const Register = () => {
             return
         }
 
+        // let getuserdata;
+        // try {
+        //     const storedData = JSON.parse(localStorage.getItem("userdata"));
+        //     getuserdata = Array.isArray(storedData) ? storedData : [];
+        // } catch (e) {
+        //     getuserdata = [];
+        // }
 
-        let getuserdata;
-        try {
-            const storedData = JSON.parse(localStorage.getItem("userdata"));
-            getuserdata = Array.isArray(storedData) ? storedData : [];
-        } catch (e) {
-            getuserdata = [];
-        }
-
-        // let getuserdata = JSON.parse(localStorage.getItem("userdata")) || [] // not working in crome
+        let getuserdata = JSON.parse(localStorage.getItem("userdata")) || [] // not working in crome
 
         let newdata = [...getuserdata, reg]
         localStorage.setItem("userdata", JSON.stringify(newdata))

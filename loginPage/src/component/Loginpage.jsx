@@ -3,7 +3,7 @@ import { NavLink, useNavigate } from 'react-router-dom'
 import Navbar from './Navbar';
 
 const Loginpage = () => {
-    let navigat = useNavigate();
+    let navigate = useNavigate();
     let [logindata, setlogindata] = useState({
         email: "",
         pass: ""
@@ -17,22 +17,23 @@ const Loginpage = () => {
     };
 
     let setlogin = (e) => {
-        e.preventDefault();
-        let storedata = JSON.parse(localStorage.getItem("userdata")) || [];
+    e.preventDefault();
+    let storedata = JSON.parse(localStorage.getItem("userdata")) || [];
 
-        let getdata = storedata.find(
-            (email => logindata.email === email.email) && (pass => logindata.pass === pass.pass)
-        );
+    let getdata = storedata.find(user =>
+        user.email === logindata.email && user.pass === logindata.pass
+    );
 
-        if (getdata) {
-            localStorage.setItem("logdata", logindata.email);
-            navigat("/Home");
-        } else {
-            setloginError("Invalid email or password.");
-        }
-        setlogindata({ email: "", pass: "" });
+    if (getdata) {
+        localStorage.setItem("logdata", logindata.email);
+        navigate("/Home");
+    } else {
+        setloginError("Invalid email or password.");
+    }
 
-    };
+    setlogindata({ email: "", pass: "" });
+};
+
 
     return (
         <>
@@ -84,12 +85,12 @@ const Loginpage = () => {
                         </div>
 
                         <div className="mt-10 text-center text-sm text-gray-500">
-                            Not a member?{" "}
+                            Click here?{" "}
                             <NavLink
                                 to="/Register"
                                 className="font-semibold text-indigo-600 hover:text-indigo-500"
                             >
-                                Register
+                                Create Account
                             </NavLink>
                         </div>
                     </form>

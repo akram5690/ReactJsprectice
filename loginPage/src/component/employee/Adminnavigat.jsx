@@ -1,28 +1,13 @@
-import { NavLink, useNavigate } from 'react-router-dom'
+import React from 'react'
+import { NavLink } from 'react-router-dom'
 
-const Navbar = () => {
-    const navigate = useNavigate();
-
-    const logindata = JSON.parse(localStorage.getItem("logindata"));
-
-    const isAdmin = () => {
-        return logindata?.email === "shaikhakram5690@gmail.com" && logindata?.pass === "a@12345";
-    };
-
-    const handleLogout = () => {
-        localStorage.removeItem("logindata");
-        navigate("/");
-    };
-
+const Adminnavigat = () => {
     const navitems = [
         { pathname: "Home", path: "/Home" },
         { pathname: "Login", path: "/" },
-        { pathname: "Create Account", path: "/Register" },
+        { pathname: "create account", path: "/Register" },
+        { pathname: "Employee", path: "/Empdata" },
     ];
-
-    if (isAdmin()) {
-        navitems.push({ pathname: "Employee", path: "/Empdata" });
-    }
 
     return (
         <>
@@ -48,11 +33,10 @@ const Navbar = () => {
                             </li>
                         ))}
                     </ul>
-                <button onClick={handleLogout}>LogOut</button>
                 </nav>
             </header>
         </>
     )
 }
 
-export default Navbar;
+export default Adminnavigat

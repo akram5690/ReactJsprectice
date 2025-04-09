@@ -1,10 +1,14 @@
-import React from 'react'
+import React, { useEffect, useState } from 'react'
 import Navbar from './Navbar'
+import Empdatashow from './employee/Empdatashow'
+
 
 const Home = () => {
+
   return (
     <>
       <Navbar />
+
       <div className="relative isolate overflow-hidden bg-gray-900 mt-18 py-24 sm:py-32">
         <img
           src="https://images.unsplash.com/photo-1521737604893-d14cc237f11d?auto=format&fit=crop&crop=focalpoint&fp-y=.8&w=2830&h=1500&q=80"
@@ -65,6 +69,7 @@ const Home = () => {
           </div>
         </div>
       </div>
+      <Empdatashow />
     </>
   )
 }

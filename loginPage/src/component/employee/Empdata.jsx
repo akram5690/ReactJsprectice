@@ -20,13 +20,15 @@ const Empdata = () => {
         e.preventDefault();
 
         
-        let empgetdata;
-        try {
-            const storedData = JSON.parse(localStorage.getItem("employee"));
-            empgetdata = Array.isArray(storedData) ? storedData : [];
-        } catch (e) {
-            empgetdata = [];
-        }
+        // let empgetdata;
+        // try {
+        //     const storedData = JSON.parse(localStorage.getItem("employee"));
+        //     empgetdata = Array.isArray(storedData) ? storedData : [];
+        // } catch (e) {
+        //     empgetdata = [];
+        // }
+
+        let empgetdata = JSON.parse(localStorage.getItem("employee")) || []
         
         let newempdata = [...empgetdata, empdata]
         localStorage.setItem("employee", JSON.stringify(newempdata));
