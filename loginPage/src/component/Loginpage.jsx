@@ -25,7 +25,7 @@ const Loginpage = () => {
     );
 
     if (getdata) {
-        localStorage.setItem("logdata", logindata.email);
+        sessionStorage.setItem("logdata", logindata.email);
         navigate("/Home");
     } else {
         setloginError("Invalid email or password.");

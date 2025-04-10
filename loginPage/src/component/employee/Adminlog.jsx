@@ -16,7 +16,8 @@ const Adminlog = () => {
     let hendelsubmit = (e) => {
         e.preventDefault();
         if (addlog.email === "shaikhakram5690@gmail.com" && addlog.pass === "a@12345") {
-            localStorage.setItem("logindata", JSON.stringify(addlog));
+            sessionStorage.setItem("addminlogin", JSON.stringify(addlog));
+            console.log("hi")
             navigate("/Home");
         } else {
             alert("Invalid email and password");

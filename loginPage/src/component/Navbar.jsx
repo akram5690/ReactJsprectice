@@ -3,14 +3,16 @@ import { NavLink, useNavigate } from 'react-router-dom'
 const Navbar = () => {
     const navigate = useNavigate();
 
-    const logindata = JSON.parse(localStorage.getItem("logindata"));
+    const addminlogin = JSON.parse(sessionStorage.getItem("addminlogin"));
 
     const isAdmin = () => {
-        return logindata?.email === "shaikhakram5690@gmail.com" && logindata?.pass === "a@12345";
+        return addminlogin?.email === "shaikhakram5690@gmail.com" && addminlogin?.pass === "a@12345";
     };
 
+
     const handleLogout = () => {
-        localStorage.removeItem("logindata");
+        sessionStorage.removeItem("addminlogin");
+        sessionStorage.removeItem("logdata");
         navigate("/");
     };
 
@@ -48,7 +50,7 @@ const Navbar = () => {
                             </li>
                         ))}
                     </ul>
-                <button onClick={handleLogout}>LogOut</button>
+                    <button onClick={handleLogout} className='cursor-pointer'>LogOut</button>
                 </nav>
             </header>
         </>
