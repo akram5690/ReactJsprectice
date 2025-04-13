@@ -24,6 +24,7 @@ const Navbar = () => {
 
     if (isAdmin()) {
         navitems.push({ pathname: "Employee", path: "/Empdata" });
+        navitems.push({ pathname: "Empdatashow", path: "/Empdatashow" });
     }
 
     return (

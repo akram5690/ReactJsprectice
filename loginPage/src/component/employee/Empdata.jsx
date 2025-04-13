@@ -96,6 +96,12 @@ const Empdata = () => {
                   <option value="HR">HR</option>
                   <option value="Manager">Manager</option>
                   <option value="Developer">Developer</option>
+                  <option value="Team Lead">Team Lead</option>
+                  <option value="UI/UX Designer">UI/UX Designer</option>
+                  <option value="QA Engineer">QA Engineer</option>
+                  <option value="Intern">Intern</option>
+                  <option value="Support Engineer">Support Engineer</option>
+                  <option value="Project Manager">Project Manager</option>
                 </select>
               </div>
             </div>

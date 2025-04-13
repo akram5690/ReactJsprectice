@@ -1,0 +1,44 @@
+{
+  "cards": [
+    {
+      "image": "https://images.unsplash.com/photo-1541099649105-f69ad21f3246",
+      "title": "Men's Classic White T-Shirt",
+      "text": "Premium quality cotton tee, breathable and durable for everyday wear.",
+      "rate": "₹499",
+      "link": "https://yourshop.com/products/classic-white-tshirt",
+      "id": "df23"
+    },
+    {
+      "image": "https://images.unsplash.com/photo-1521572163474-6864f9cf17ab",
+      "title": "Women's Summer Floral Dress",
+      "text": "Lightweight and flowy floral dress, perfect for summer outings.",
+      "rate": "₹1,299",
+      "link": "https://yourshop.com/products/floral-dress",
+      "id": "10a3"
+    },
+    {
+      "image": "https://5.imimg.com/data5/SELLER/Default/2022/11/ST/UU/KT/135655454/men-denim-jacket-500x500.jpg",
+      "title": "Men's Denim Jacket",
+      "text": "Stylish blue denim jacket with classic fit and button closure.",
+      "rate": "₹1,999",
+      "link": "https://yourshop.com/products/denim-jacket",
+      "id": "5f30"
+    },
+    {
+      "image": "https://images.unsplash.com/photo-1503342217505-b0a15ec3261c",
+      "title": "Women's Casual Hoodie",
+      "text": "Soft and comfy hoodie with a relaxed fit and front pocket.",
+      "rate": "₹899",
+      "link": "https://yourshop.com/products/casual-hoodie",
+      "id": "f189"
+    },
+    {
+      "image": "https://assets.ajio.com/medias/sys_master/root/20241112/c8o6/6732b134f9b8ef490b158a9b/-473Wx593H-700695913-black-MODEL.jpg",
+      "title": "Unisex Jogger Pants",
+      "text": "Slim-fit joggers ideal for workouts or lounging.",
+      "rate": "₹749",
+      "link": "https://yourshop.com/products/jogger-pants",
+      "id": "2ee8"
+    }
+  ]
+}

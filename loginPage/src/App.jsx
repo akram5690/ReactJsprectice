@@ -2,6 +2,7 @@
 import './App.css'
 import Adminlog from './component/employee/Adminlog'
 import Empdata from './component/employee/Empdata'
+import Empdatashow from './component/employee/Empdatashow'
 import Home from './component/Home'
 import Loginpage from './component/Loginpage'
 import ProtectedRouts from './component/ProtectedRouts'
@@ -26,6 +27,10 @@ function App() {
 
           <Route element={<ProtectedRouts />} path='/Empdata'>
             <Route element={<Empdata />} path='/Empdata'></Route>
+          </Route>
+
+          <Route element={<ProtectedRouts />} path='/Empdatashow'>
+            <Route element={<Empdatashow />} path='/Empdatashow'></Route>
           </Route>
         </Routes>
       </Router>

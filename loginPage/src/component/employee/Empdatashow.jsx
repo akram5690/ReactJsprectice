@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from 'react'
+import Navbar from '../Navbar'
 
-const Showdata = () => {
+const Empdatashow = () => {
   const [getdata, setGetdata] = useState([])
   const [editdata, setEditdata] = useState(null)
   const [modalOpen, setModalOpen] = useState(false)
@@ -39,7 +40,8 @@ const Showdata = () => {
 
   return (
     <>
-      <div className="overflow-x-auto mt-10">
+    <Navbar />
+      <div className="overflow-x-auto mt-20">
         <table className="min-w-full bg-white shadow-md rounded-lg overflow-hidden">
           <thead className="bg-indigo-600 text-white">
             <tr>
@@ -76,7 +78,7 @@ const Showdata = () => {
       </div>
 
       {modalOpen && (
-        <div className="fixed inset-0 flex items-center justify-center z-50 bg-black bg-opacity-40">
+        <div className="fixed inset-0 flex items-center justify-center z-50 bg-white bg-opacity-40">
           <div className="bg-white rounded-lg w-full max-w-md p-6 shadow-lg relative">
             <h2 className="text-xl font-semibold mb-4">Edit Employee</h2>
             <form onSubmit={handleUpdate} className="space-y-4">
@@ -105,8 +107,14 @@ const Showdata = () => {
                 <select name="designation" value={editdata.designation} onChange={handleChange} className="w-full border px-3 py-2 rounded">
                   <option value="">Select</option>
                   <option value="HR">HR</option>
-                  <option value="Manager">Manager</option>
-                  <option value="Developer">Developer</option>
+  <option value="Manager">Manager</option>
+  <option value="Developer">Developer</option>
+  <option value="Team Lead">Team Lead</option>
+  <option value="UI/UX Designer">UI/UX Designer</option>
+  <option value="QA Engineer">QA Engineer</option>
+  <option value="Intern">Intern</option>
+  <option value="Support Engineer">Support Engineer</option>
+  <option value="Project Manager">Project Manager</option>
                 </select>
               </div>
               <div>
@@ -126,4 +134,4 @@ const Showdata = () => {
   )
 }
 
-export default Showdata
+export default Empdatashow
