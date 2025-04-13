@@ -13,8 +13,8 @@ const Navigation = () => {
   return (
     <>
       <nav className="navbar navbar-expand-lg bg-body-tertiary">
-        <div className="container-fluid">
-          <NavLink className="navbar-brand" to="/">MyShop</NavLink>
+        <div className="container-fluid g-5">
+          <h2>MyShop</h2>
           <button
             className="navbar-toggler"
             type="button"
