@@ -1,4 +1,5 @@
 import React, { useEffect, useState } from 'react';
+import { NavLink } from 'react-router-dom';
 
 const Shopcard = () => {
   const [getdata, setgetdata] = useState([]);
@@ -13,12 +14,13 @@ const Shopcard = () => {
     fechapidata();
   }, []);
 
+
   const img = {
     // height: "350px",
     width: "100%",
     objectFit: "cover",
     aspectRatio: "1 / 1.5"
-};
+  };
 
   return (
     <div className="container py-4">
@@ -37,10 +39,13 @@ const Shopcard = () => {
                 <p className="card-text flex-grow-1">{item.text}</p>
               </div>
               <div className="card-footer bg-white border-0 d-flex justify-content-between align-items-center">
-                <strong className="text-primary">₹{item.rate}</strong>
-                <a href={item.link} className="btn btn-sm btn-outline-primary">
-                  View
-                </a>
+                <strong className="text-primary">{item.rate}</strong>
+                <button className="btn btn-sm btn-outline-primary">
+                  <NavLink to="/Addtocard" state={{ item }}>
+                    AddCard
+                  </NavLink>
+
+                </button>
               </div>
             </div>
           </div>

@@ -30,7 +30,7 @@ const Addproduct = () => {
             rate: "",
             link: ""
         });
-        navigate("/Shopcard")
+        navigate("/")
     };
 
 

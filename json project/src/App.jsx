@@ -1,4 +1,5 @@
 import './App.css';
+import Addtocard from './component/Addtocard';
 import Navigation from './component/Navigation';
 import Addproduct from './component/product seller/Addproduct';
 import Login from './component/product seller/Login';
@@ -20,6 +21,7 @@ function App() {
 
         <Route path="/Login" element={<Login />} />
         <Route path="/Register" element={<Register />} />
+        <Route path="/Addtocard" element={<Addtocard />} />
       </Routes>
     </Router>
   );
