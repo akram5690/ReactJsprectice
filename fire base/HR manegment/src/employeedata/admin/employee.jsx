@@ -7,7 +7,7 @@ const Employee = () => {
   const [empdata, setempdata] = useState([]);
   const [editId, setEditId] = useState(null);
   const [dataupdate, setdataupdate] = useState({
-    id : '',
+    id: '',
     fullname: '',
     salary: '',
     designation: '',
@@ -37,7 +37,7 @@ const Employee = () => {
   const handleEdit = (item) => {
     setEditId(item.id);
     setdataupdate({
-      id : item.id,
+      id: item.id,
       fullname: item.fullname,
       salary: item.salary,
       designation: item.designation,
@@ -63,7 +63,7 @@ const Employee = () => {
 
   return (
     <>
-      <Updatedata />
+      {/* <Updatedata /> */}
       <div className="container mt-5">
         <table className='table table-bordered'>
           <thead className='table-dark'>
@@ -78,7 +78,7 @@ const Employee = () => {
           </thead>
           <tbody>
             {
-              empdata.map(item => (
+              empdata.map((item) => (
                 <tr key={item.id}>
                   <td>{item.id}</td>
                   <td>
@@ -101,7 +101,17 @@ const Employee = () => {
                         <option value="HR">HR</option>
                         <option value="Frontend Developer">Frontend Developer</option>
                         <option value="Backend Developer">Backend Developer</option>
-                        <option value="DevOps">DevOps</option>
+                        <option value="Full Stack Developer">Full Stack Developer</option>
+                        <option value="DevOps Engineer">DevOps Engineer</option>
+                        <option value="UI/UX Designer">UI/UX Designer</option>
+                        <option value="Project Manager">Project Manager</option>
+                        <option value="QA Engineer">QA Engineer</option>
+                        <option value="Data Scientist">Data Scientist</option>
+                        <option value="Business Analyst">Business Analyst</option>
+                        <option value="Software Tester">Software Tester</option>
+                        <option value="Network Engineer">Network Engineer</option>
+                        <option value="Product Manager">Product Manager</option>
+                        <option value="Technical Support">Technical Support</option>
                       </select>
                     ) : (
                       item.designation

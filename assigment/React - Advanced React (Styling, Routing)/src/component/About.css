@@ -1,0 +1,53 @@
+.about-container {
+    padding: 20px;
+    background-color: #f9f9f9;
+    min-height: 100vh;
+  }
+  
+  .about-banner {
+    background: url('https://images.unsplash.com/photo-1549921296-3a5242c3d088') no-repeat center center/cover;
+    height: 250px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: rgb(88, 88, 88);
+    border-radius: 12px;
+    margin-bottom: 30px;
+  }
+  
+  .about-banner h1 {
+    font-size: 48px;
+    margin: 0;
+  }
+  
+  .about-banner p {
+    font-size: 18px;
+    margin-top: 10px;
+  }
+  
+  .about-content {
+    max-width: 900px;
+    margin: auto;
+    background: white;
+    padding: 30px;
+    border-radius: 12px;
+    box-shadow: 0px 5px 15px rgba(0,0,0,0.1);
+  }
+  
+  .about-content h2 {
+    margin-top: 20px;
+    color: #27ae60;
+  }
+  
+  .about-content p, .about-content ul {
+    margin-top: 10px;
+    font-size: 16px;
+    color: #555;
+    line-height: 1.6;
+  }
+  
+  .about-content ul li {
+    margin-top: 8px;
+  }
+  

@@ -21,9 +21,11 @@ const Register = () => {
         e.preventDefault();
         if (regdata.pass === regdata.cpass) {
             try {
+                //Firebase Authentication function that allows a new user to register using an email and password.
                 const userCredential = await createUserWithEmailAndPassword(auth, regdata.Email, regdata.pass);
                 const user = userCredential.user;
 
+                //creates a reference to a document inside the 'regdata' collection where the document ID is the user.uid
                 await setDoc(doc(db, 'regdata', user.uid), {
                     fullname: regdata.fullname,
                     Email: regdata.Email,

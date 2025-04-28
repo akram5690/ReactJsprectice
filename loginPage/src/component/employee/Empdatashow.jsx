@@ -40,7 +40,7 @@ const Empdatashow = () => {
 
   return (
     <>
-    <Navbar />
+      <Navbar />
       <div className="overflow-x-auto mt-20">
         <table className="min-w-full bg-white shadow-md rounded-lg overflow-hidden">
           <thead className="bg-indigo-600 text-white">
@@ -107,14 +107,14 @@ const Empdatashow = () => {
                 <select name="designation" value={editdata.designation} onChange={handleChange} className="w-full border px-3 py-2 rounded">
                   <option value="">Select</option>
                   <option value="HR">HR</option>
-  <option value="Manager">Manager</option>
-  <option value="Developer">Developer</option>
-  <option value="Team Lead">Team Lead</option>
-  <option value="UI/UX Designer">UI/UX Designer</option>
-  <option value="QA Engineer">QA Engineer</option>
-  <option value="Intern">Intern</option>
-  <option value="Support Engineer">Support Engineer</option>
-  <option value="Project Manager">Project Manager</option>
+                  <option value="Manager">Manager</option>
+                  <option value="Developer">Developer</option>
+                  <option value="Team Lead">Team Lead</option>
+                  <option value="UI/UX Designer">UI/UX Designer</option>
+                  <option value="QA Engineer">QA Engineer</option>
+                  <option value="Intern">Intern</option>
+                  <option value="Support Engineer">Support Engineer</option>
+                  <option value="Project Manager">Project Manager</option>
                 </select>
               </div>
               <div>
