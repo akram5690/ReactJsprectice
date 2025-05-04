@@ -1,0 +1,60 @@
+{
+  "product": [
+    {
+      "id": "1",
+      "name": "Women's Woolen Overcoat",
+      "price": 3999,
+      "image": "https://www.mytheresa.com/media/1094/1238/100/cd/P00994223.jpg",
+      "description": "Elegant and warm woolen overcoat for women, perfect for chilly winter days."
+    },
+    {
+      "id": "2",
+      "name": "Men's Puffer Jacket",
+      "price": 3499,
+      "image": "https://encrypted-tbn3.gstatic.com/shopping?q=tbn:ANd9GcT8yS1eiMitQY3UOpBPs3WtuLi721giu2VTw36tQOHEsCUMnpQOOYaJpPjGWWp20xUQ2y9CMzdqEvrjFpl8rQ8IruE-FdhYa_AAQjMGhfK4",
+      "description": "Lightweight yet insulated puffer jacket ideal for outdoor winter adventures."
+    },
+    {
+      "id": "3",
+      "name": "Men's Thermal Set",
+      "price": 999,
+      "image": "https://m.media-amazon.com/images/I/51Hke6jWE6L._SY741_.jpg",
+      "description": "Base layer thermal set for men to stay warm and dry throughout winter."
+    },
+    {
+      "id": "4",
+      "name": "Women's Hooded Jacket",
+      "price": 4599,
+      "image": "https://encrypted-tbn1.gstatic.com/shopping?q=tbn:ANd9GcSNH1MmZQKuqhJH5pvONgwo9OCG81RfBsxD9Zd3RGCQoyg0QHFktLAskudbeTFze2Xd08bO1zIP0MnhYpZl8_zkJrmKtjY6IQ",
+      "description": "Stylish and cozy jacket with faux fur hood for extra warmth and flair."
+    },
+    {
+      "id": "5",
+      "name": "Unisex Knitted Wool Scarf",
+      "price": 699,
+      "image": "https://assets.ajio.com/medias/sys_master/root/20231128/sIti/6565a533ddf7791519a19562/-473Wx593H-410409165-98t-MODEL.jpg",
+      "description": "Chunky wool scarf to keep you snug and stylish during cold weather."
+    },
+    {
+      "id": "6",
+      "name": "Women's Winter Boots",
+      "price": 2999,
+      "image": "https://images-cdn.ubuy.co.in/66918a803436a7675821fff8-women-waterproof-snow-boots-outdoor-mid.jpg",
+      "description": "Durable and warm winter boots with a cozy lining and anti-slip sole."
+    },
+    {
+      "id": "7",
+      "name": "Men's Beanie Cap",
+      "price": 499,
+      "image": "https://iaavjo.com/cdn/shop/products/BeanieWinterCap2.jpg?v=1610686415",
+      "description": "Soft, stretchable beanie cap perfect for winter sports or casual wear."
+    },
+    {
+      "id": "8",
+      "name": "Heated Gloves (Unisex)",
+      "price": 1899,
+      "image": "https://www.newforestclothing.co.uk/cdn/shop/files/verney-carron-heated-gloves-khaki-s-959.webp?v=1724766965&width=416",
+      "description": "Battery-powered heated gloves to keep your hands toasty during freezing conditions."
+    }
+  ]
+}

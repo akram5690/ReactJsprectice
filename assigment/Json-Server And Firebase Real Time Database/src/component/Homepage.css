@@ -1,0 +1,33 @@
+.winter-container {
+  background-image: url("https://thumbs.dreamstime.com/b/isar-river-munich-germany-snow-cold-ice-winter-season-wild-forest-beautiful-nature-landscape-blue-sky-365151999.jpg"); /* winter forest/mountain */
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  min-height: 100vh;
+  position: relative;
+}
+
+.overlay {
+  background-color: rgba(0, 0, 0, 0.5); /* dark overlay for better contrast */
+  padding: 60px 0;
+}
+
+.winter-card {
+  width: 74%;
+  background: rgba(255, 255, 255, 0.15);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  border-radius: 15px;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  transition: transform 0.3s ease;
+}
+
+.winter-card:hover {
+  transform: scale(1.05);
+  box-shadow: 0 0 30px rgba(255, 255, 255, 0.3);
+}
+
+.winter-card .card-body {
+  padding: 1rem;
+  border-top: 1px solid rgba(255, 255, 255, 0.2);
+}

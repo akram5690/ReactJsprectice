@@ -1,0 +1,40 @@
+Question 1: What do you mean by RESTful web services?
+Ans:RESTful web services are web services designed based on the REST (Representational State Transfer) architectural style.
+
+Question 2: What is Json-Server? How we use in React ?
+Ans:JSON Server is a tool that lets you create a mock REST API using a JSON file. It’s useful for testing and developing React apps without a real backend.
+         How to Use in React:
+            Install JSON Server:
+            npm install -g json-server
+
+            Create db.json with sample data.
+
+            Run server:
+            json-server --watch db.json --port 3000
+
+            Use in React:
+            Fetch data using fetch or axios:
+            fetch("http://localhost:3000/product")
+
+Question 3: How do you fetch data from a Json-server API in React? Explain the role of fetch() or axios() in making API requests.
+Ans:To fetch data from a JSON Server API in React, you use fetch() or axios() inside useEffect() to make HTTP requests (GET, POST, PUT, DELETE).
+         Role of fetch() / axios():
+            fetch() and axios() are used to send requests to APIs.
+            They help in retrieving, adding, updating, or deleting data.
+            axios is a library; fetch is built-in.
+
+Question 4: What is Firebase? What features does Firebase offer?
+Ans:Firebase is a Backend-as-a-Service (BaaS) platform by Google that helps developers build web and mobile apps faster without managing servers.
+         Key Features of Firebase:
+            Authentication – User login with email, Google, Facebook, etc.
+            Firestore / Realtime Database – Store and sync data in real time.
+            Hosting – Fast and secure static web hosting.
+            Cloud Functions – Run backend code (serverless).
+            Storage – Store user-uploaded files like images and videos.
+            Analytics – Track user behavior and app performance.
+            Push Notifications – Send messages to users via Firebase Cloud Messaging (FCM).
+
+Question 5: Discuss the importance of handling errors and loading states when working with
+APIs in React
+Ans: to provide a smooth user experience and handle unexpected errors that may occur during data fetching or asynchronous operations.
+
