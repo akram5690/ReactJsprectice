@@ -1,0 +1,6 @@
+Question 1: What is Redux, and why is it used in React applications? Explain the core
+concepts of actions, reducers, and the store.
+Ans: Redux is a predictable state container for JavaScript apps, particularly useful in React applications, as it centralizes application state management.
+
+Question 2: How does Recoil simplify state management in React compared to Redux?
+Ans: Recoil simplifies state management in React compared to Redux by offering a more intuitive and streamlined approach, particularly for smaller to medium-sized applications. 
