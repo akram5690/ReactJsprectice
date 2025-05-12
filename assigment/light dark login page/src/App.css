@@ -1,0 +1,81 @@
+body {
+  margin: 0;
+  font-family: 'Segoe UI', sans-serif;
+  transition: background 0.3s, color 0.3s;
+}
+
+.app.light {
+  background-color: #f8f9fa;
+  color: #212529;
+}
+
+.app.dark {
+  background-color: #121212;
+  color: #f8f9fa;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  padding: 1rem 2rem;
+  background: transparent;
+}
+
+.btn {
+  padding: 8px 16px;
+  border-radius: 6px;
+  cursor: pointer;
+  border: none;
+}
+
+.toggle-btn {
+  background-color: transparent;
+  border: 1px solid currentColor;
+  color: inherit;
+  transition: 0.3s;
+}
+
+.logout-btn {
+  background-color: #dc3545;
+  color: white;
+}
+
+.main-content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: calc(100vh - 80px);
+}
+
+.login-card {
+  background: white;
+  padding: 2rem;
+  border-radius: 12px;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+  max-width: 400px;
+  width: 100%;
+  transition: background 0.3s, color 0.3s;
+}
+
+.app.dark .login-card {
+  background: #1f1f1f;
+}
+
+.form-input {
+  width: 100%;
+  padding: 10px 12px;
+  margin-bottom: 1rem;
+  border-radius: 6px;
+  border: 1px solid #ccc;
+  background-color: inherit;
+  color: inherit;
+}
+
+.form-input::placeholder {
+  color: #999;
+}
+
+.welcome-text {
+  text-align: center;
+  font-size: 1.5rem;
+}
