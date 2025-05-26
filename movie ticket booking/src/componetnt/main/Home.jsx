@@ -8,6 +8,22 @@ const Home = () => {
   const navigate = useNavigate()
   const [movidata, setmoviedata] = useState([]);
 
+  const movieposter = [
+    "https://cdn.shopify.com/s/files/1/1057/4964/files/The-Dark-Knight-Vintage-Movie-Poster-Original_51aa2163_368x.jpg?v=1741715850",
+    "https://cdn.prod.website-files.com/6009ec8cda7f305645c9d91b/66a4263d01a185d5ea22eeec_6408f6e7b5811271dc883aa8_batman-min.png",
+    "https://d1csarkz8obe9u.cloudfront.net/posterpreviews/adventure-movie-poster-template-design-7b13ea2ab6f64c1ec9e1bb473f345547_screen.jpg?ts=1636999411",
+    "https://creativereview.imgix.net/content/uploads/2024/12/AlienRomulus-scaled.jpg?auto=compress,format&q=60&w=1728&h=2560",
+    "https://i.etsystatic.com/37166133/r/il/60f034/4087791906/il_570xN.4087791906_jcbj.jpg",
+    "https://cdn.prod.website-files.com/6009ec8cda7f305645c9d91b/66a4263d01a185d5ea22eeda_6408f76710a9935109f855d4_smile-min.png",
+    "https://www.komar.de/media/catalog/product/cache/5/image/9df78eab33525d08d6e5fb8d27136e95/import/api-v1.1-file-public-files-pim-assets-97-ad-84-62-6284ad972eff292d45ce1a2e-images-d6-63-ba-65-65ba63d65b4bee91324cbdfd-vd-046-p.jpg",
+    "https://www.washingtonpost.com/graphics/2019/entertainment/oscar-nominees-movie-poster-design/img/black-panther-web.jpg",
+    "https://www.vintagemovieposters.co.uk/wp-content/uploads/2020/01/IMG_2891.jpeg",
+    "https://www.vintagemovieposters.co.uk/wp-content/uploads/2020/11/IMG_5878-scaled.jpeg",
+    "https://readydesignswala.com/wp-content/uploads/2023/07/BLOOD-SHOOT-2-MOVIE-POSTER-scaled-1-scaled.webp",
+    "https://lh6.googleusercontent.com/proxy/RgK9HxThPtQumOT1gOy_OkMdzmditYSFjGHioO_l75Aujcw0Xdc_axGWoD-mzxAM8u3ryUlEeaBaXNfAY26yblOilJPylndzQzzVLUsr9ZEgpRobhFB4Bw",
+    "https://www.designmantic.com/blog/wp-content/uploads/2017/10/Oblivion.jpg"
+  ]
+
   const fechdata = async () => {
     await fetch('http://localhost:8000/moviedata')
       .then(res => res.json())
@@ -33,6 +49,17 @@ const Home = () => {
         <div>
           <div className="row">
             <main className="col-md-9">
+              <div className="row justify-content-center my-4">
+                <div className="track-wrapper">
+                  <ul className="track">
+                    {movieposter.map((item, index) => (
+                      <li key={index} className="track__item">
+                        <img src={item} alt="error" />
+                      </li>
+                    ))}
+                  </ul>
+                </div>
+              </div>
               <h2 className="text-center fw-bold mt-5">🎬 Latest Movies</h2>
               <div className="row justify-content-center">
                 {movidata.length > 0 ? (

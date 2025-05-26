@@ -9,6 +9,7 @@ import Selecttheter from './componetnt/main/Selecttheter'
 import Selectseats from './componetnt/main/Selectseats'
 import ReceiptPage from './componetnt/main/Reciptpage'
 import Addmovies from './componetnt/admin/Addmovies'
+import Protectrouts from './componetnt/protect/protectrouts'
 
 function App() {
 
@@ -18,13 +19,28 @@ function App() {
     <Navigationbar />
     <Routes>
       <Route element={<Home />} path='/'></Route>
-      <Route element={<Bookingpage />} path='/Bookingpage'></Route>
       <Route element={<Register />} path='/Regestar'></Route>
       <Route element={<Login />} path='/Login'></Route>
+
+      <Route element={<Protectrouts />} path='/Bookingpage'>
+      <Route element={<Bookingpage />} path='/Bookingpage'></Route>
+      </Route>
+      
+      <Route element={<Protectrouts />} path='/Selecttheter'>
       <Route element={<Selecttheter />} path='/Selecttheter'></Route>
+      </Route>
+
+      <Route element={<Protectrouts />} path='/Selectseats'>
       <Route element={<Selectseats />} path='/Selectseats'></Route>
+      </Route>
+
+      <Route element={<Protectrouts />} path='/ReceiptPage'>
       <Route element={<ReceiptPage />} path='/ReceiptPage'></Route>
+      </Route>
+
+      <Route element={<Protectrouts />} path='/Addmovies'>
       <Route element={<Addmovies />} path='/Addmovies'></Route>
+      </Route>
 
     </Routes>
    </Router>

@@ -1,28 +1,29 @@
 .maincont {
-    min-height: 100vh !important;
-    margin: auto !important;
-    width: 90% !important;
+  min-height: 100vh !important;
+  margin: auto !important;
+  width: 90% !important;
 }
 
+
 .card_style {
-    cursor: pointer !important;
-    width: 80% !important;
-    background: none !important;
-    border: none !important;
-    transform: skew(-3deg, -3deg) !important;
-    transition: transform 0.3s ease-in-out !important;
-  }
-  
-  .card_style:hover {
-    transform: skew(-3deg, -3deg) scale(1.02) !important;
-  }
-  
-  .star {
-    font-size: 1rem !important;
-    color: rgb(233, 200, 14) !important;
-  }
-  
-  .style-img {
+  cursor: pointer !important;
+  width: 80% !important;
+  background: none !important;
+  border: none !important;
+  transform: skew(-3deg, -3deg) !important;
+  transition: transform 0.3s ease-in-out !important;
+}
+
+.card_style:hover {
+  transform: skew(-3deg, -3deg) scale(1.02) !important;
+}
+
+.star {
+  font-size: 1rem !important;
+  color: rgb(233, 200, 14) !important;
+}
+
+.style-img {
   border-radius: 1rem;
   object-fit: cover;
   height: 300px;
@@ -33,6 +34,7 @@
   .style-img {
     height: 220px;
   }
+
   .style-title {
     font-size: 0.9rem;
   }
@@ -42,17 +44,18 @@
   .style-img {
     height: 180px;
   }
+
   .style-title {
     font-size: 0.85rem;
   }
 }
 
-.style-title{
+.style-title {
   font-size: 1rem !important;
 }
 
 .side-bar {
-    margin-top: 5rem !important;
+  margin-top: 5rem !important;
 }
 
 .side-bar {
@@ -67,4 +70,67 @@
 
 .side-bar iframe {
   box-shadow: 0 0 8px rgba(0, 0, 0, 0.2) !important;
+}
+
+
+
+
+/* ============= movie poster slider css ============== */
+
+.track-wrapper {
+	width: 80%;
+  max-inline-size: var(--size-content-3);
+	overflow: hidden;
+	-webkit-mask: linear-gradient(90deg,
+								transparent 0,
+								black 15% 85%,
+								transparent
+							) 0 50% / 100% calc(100% - (2 * var(--size-4))) no-repeat,
+							linear-gradient(0deg, black, black) 50% 0 / 100% var(--size-4) no-repeat,
+							linear-gradient(0deg, black, black) 50% 100% / 100% var(--size-4) no-repeat;
+}
+
+img {
+	height: 100%;
+	width: 100%;
+}
+
+.track {
+	--size: clamp(200px, 40vmin, 50rem);
+	height: var(--size);
+	/* width: 1%; */
+	display: flex;
+	overflow: overlay;
+	gap: var(--size-4);
+	list-style-type: none;
+  margin: 0;
+	padding: var(--size-4) 33%;
+	scroll-snap-type: x mandatory;
+	-webkit-mask: radial-gradient(#0000 0 30%, #000 30.5%) 50% calc(var(--size) * 0.5) / 300% 100%,
+								linear-gradient(0deg, black, black) 50% 0 / 100% var(--size-4) no-repeat,
+								linear-gradient(0deg, black, black) 50% 100% / 100% var(--size-4) no-repeat;
+
+}
+
+.track__item {
+	height: 100%;
+	aspect-ratio: 1;
+	background: hsl(0 80% 50% / 1);
+	scroll-snap-align: center;
+}
+
+h1 {
+  position: fixed;
+  margin: 0;
+  opacity: 0.5;
+  bottom: var(--size-3);
+  right: var(--size-3);
+  font-size: var(--font-size-fluid-1);
+}
+:root {
+  --size-4: 1rem;
+  --size-3: 0.75rem;
+  --size-content-3: 1200px;
+  --gray-2: #f3f4f6; /* soft light gray background */
+  --font-size-fluid-1: clamp(1rem, 2vw, 1.5rem);
 }

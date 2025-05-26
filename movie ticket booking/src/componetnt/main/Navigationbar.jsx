@@ -28,18 +28,6 @@ const Navigationbar = () => {
               <NavLink className="nav-link text-dark" to="/">Home</NavLink>
             </li>
             <li className="nav-item">
-              <NavLink className="nav-link text-dark" to="/Bookingpage">Booking</NavLink>
-            </li>
-            <li className="nav-item">
-              <NavLink className="nav-link text-dark" to="/Selecttheter">Thaiter</NavLink>
-            </li>
-            <li className="nav-item">
-              <NavLink className="nav-link text-dark" to="/Selectseats">seats</NavLink>
-            </li>
-            <li className="nav-item">
-              <NavLink className="nav-link text-dark" to="/ReceiptPage">ReceiptPage</NavLink>
-            </li>
-            <li className="nav-item">
               <NavLink className="nav-link text-dark" to="/Addmovies">Addmovies</NavLink>
             </li>
           </ul>

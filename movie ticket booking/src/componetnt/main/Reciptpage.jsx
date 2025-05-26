@@ -35,8 +35,6 @@ const ReceiptPage = () => {
 
           <div className="col-md-8">
             <h3 className="fw-bold">{movie.title || "Movie Title"}</h3>
-            <p>{movie.text || "No description available."}</p>
-
             <hr />
 
             <p><strong>🎬 Theater:</strong> {theater.theater || "N/A"}</p>
