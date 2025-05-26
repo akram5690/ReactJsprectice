@@ -1,0 +1,57 @@
+.book-img {
+  width: 100%;
+  height: auto;
+  max-height: 700px;
+  object-fit: cover;
+  border-radius: 1rem;
+}
+
+/* Cast Image */
+.cast-img {
+  width: 80px;
+  height: 80px;
+  object-fit: cover;
+  border-radius: 50%;
+  transition: transform 0.3s ease-in-out;
+}
+
+.cast-img:hover {
+  transform: scale(1.1);
+}
+
+/* Responsive Breakpoints */
+@media (max-width: 992px) {
+  .book-img {
+    max-height: 500px;
+  }
+}
+
+@media (max-width: 768px) {
+  .book-img {
+    max-height: 400px;
+  }
+
+  .cast-img {
+    width: 70px;
+    height: 70px;
+  }
+}
+
+@media (max-width: 576px) {
+  .book-img {
+    max-height: 300px;
+  }
+
+  .cast-img {
+    width: 60px;
+    height: 60px;
+  }
+
+  .card-title {
+    font-size: 1.4rem;
+  }
+
+  .btn {
+    width: 100%;
+  }
+}
