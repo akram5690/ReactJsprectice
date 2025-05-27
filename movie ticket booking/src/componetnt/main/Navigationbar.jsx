@@ -4,13 +4,14 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import '../css/nav.css';
 
 const Navigationbar = () => {
+
+  const adminpanel = JSON.parse(sessionStorage.getItem("adminlog"))
+
   return (
     <nav className="navbar navbar-expand-lg navbar-light fixed-top navStyle">
       <div className="container-fluid">
         <NavLink className="navbar-brand fw-bold text-dark ms-5" to="/">
-            <span>Sh<span role="img" aria-label="clapper">🎬</span>wTime</span>
-
-
+          <span>Sh<span role="img" aria-label="clapper">🎬</span>wTime</span>
         </NavLink>
 
         <button
@@ -24,12 +25,24 @@ const Navigationbar = () => {
 
         <div className="collapse navbar-collapse" id="navbarNav">
           <ul className="navbar-nav">
-            <li className="nav-item">
-              <NavLink className="nav-link text-dark" to="/">Home</NavLink>
-            </li>
-            <li className="nav-item">
-              <NavLink className="nav-link text-dark" to="/Addmovies">Addmovies</NavLink>
-            </li>
+            {
+              adminpanel ? (
+                <>                
+                <li className="nav-item">
+                  <NavLink className="nav-link text-dark" to="/">Home</NavLink>
+                </li>
+                  <li className="nav-item">
+                    <NavLink className="nav-link text-dark" to="/Addmovies">Addmovies</NavLink>
+                  </li>
+                </>
+              ) : (
+                <>
+                  <li className="nav-item">
+                    <NavLink className="nav-link text-dark" to="/">Home</NavLink>
+                  </li>
+                </>
+              )}
+
           </ul>
 
           <form className="d-flex mx-auto search-form" role="search">

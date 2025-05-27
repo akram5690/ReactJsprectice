@@ -41,6 +41,22 @@ const Home = () => {
     navigate("/Bookingpage");
   };
 
+  const adminpanel = JSON.parse(sessionStorage.getItem("adminlog"))
+
+  const handledelete = async (id) => {
+    try {
+      if (confirm("delete movie")) {
+        await fetch(`http://localhost:8000/moviedata/${id}`, {
+          method: "DELETE",
+        });
+        fechdata();
+      }
+    } catch (error) {
+      console.error("Error deleting movie:", error);
+    }
+  };
+
+
 
 
   return (
@@ -63,31 +79,59 @@ const Home = () => {
               <h2 className="text-center fw-bold mt-5">🎬 Latest Movies</h2>
               <div className="row justify-content-center">
                 {movidata.length > 0 ? (
-                  movidata.map((item, index) => (
-                    <div onClick={() => handleselect(item)}
-                      className="col-12 col-sm-6 col-md-6 col-lg-3 d-flex justify-content-center mb-3 text-decoration-none"
-                      key={index}
-                    >
-                      <div className="card text-center p-3 card_style">
-                        <img
-                          src={item.image}
-                          className="card-img-top p-1 rounded-4 style-img"
-                          alt="Movie Poster"
-                        />
-                        <div className="card-body text-dark text-end">
-                          <div className="d-flex justify-content-between pb-2 star">
-                            <span><FontAwesomeIcon icon={faStar} /> {item.stars}</span>
-                            <span>{item.vote} Votes</span>
+                  adminpanel ? (
+                    movidata.map((item, index) => (
+                      <div onClick={() => handleselect(item)}
+                        className="col-12 col-sm-6 col-md-6 col-lg-3 d-flex justify-content-center mb-3 text-decoration-none"
+                        key={index}
+                      >
+                        <div className="card text-center p-3 card_style">
+                          <img
+                            src={item.image}
+                            className="card-img-top p-1 rounded-4 style-img"
+                            alt="Movie Poster"
+                          />
+                          <div className="card-body text-dark text-end">
+                            <div className="d-flex justify-content-between pb-2 star">
+                              <span><FontAwesomeIcon icon={faStar} /> {item.stars}</span>
+                              <span>{item.vote} Votes</span>
+                            </div>
+                            <h5 className="card-title text-start style-title">{item.title}</h5>
+                            <p className="text-muted small text-start">{item.genre}</p>
+                            {/* only show in admin */}
+                            <button className="btn btn-danger mt-2 z-3" onClick={(e) => handledelete(item.id)}>Delete</button>
                           </div>
-                          <h5 className="card-title text-start style-title">{item.title}</h5>
-                          <p className="text-muted small text-start">{item.genre}</p>
                         </div>
                       </div>
-                    </div>
-                  ))
+                    ))
+                  ) : (
+                    movidata.map((item, index) => (
+                      <div onClick={() => handleselect(item)}
+                        className="col-12 col-sm-6 col-md-6 col-lg-3 d-flex justify-content-center mb-3 text-decoration-none"
+                        key={index}
+                      >
+                        <div className="card text-center p-3 card_style">
+                          <img
+                            src={item.image}
+                            className="card-img-top p-1 rounded-4 style-img"
+                            alt="Movie Poster"
+                          />
+                          <div className="card-body text-dark text-end">
+                            <div className="d-flex justify-content-between pb-2 star">
+                              <span><FontAwesomeIcon icon={faStar} /> {item.stars}</span>
+                              <span>{item.vote} Votes</span>
+                            </div>
+                            <h5 className="card-title text-start style-title">{item.title}</h5>
+                            <p className="text-muted small text-start">{item.genre}</p>
+                          </div>
+                        </div>
+                      </div>
+                    ))
+                  )
                 ) : (
                   <p className="text-center text-muted mt-5">No movie data available.</p>
                 )}
+
               </div>
             </main>
 

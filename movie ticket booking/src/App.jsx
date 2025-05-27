@@ -10,40 +10,43 @@ import Selectseats from './componetnt/main/Selectseats'
 import ReceiptPage from './componetnt/main/Reciptpage'
 import Addmovies from './componetnt/admin/Addmovies'
 import Protectrouts from './componetnt/protect/protectrouts'
+import Adminlogin from './componetnt/admin/Adminlogin'
+import Protectroutsadmin from './componetnt/protect/Protectroutsadmin'
 
 function App() {
 
   return (
     <>
-   <Router>
-    <Navigationbar />
-    <Routes>
-      <Route element={<Home />} path='/'></Route>
-      <Route element={<Register />} path='/Regestar'></Route>
-      <Route element={<Login />} path='/Login'></Route>
+      <Router>
+        <Navigationbar />
+        <Routes>
+          <Route element={<Home />} path='/'></Route>
+          <Route element={<Register />} path='/Regestar'></Route>
+          <Route element={<Login />} path='/Login'></Route>
+          <Route element={<Adminlogin />} path='/Adminlogin'></Route>
 
-      <Route element={<Protectrouts />} path='/Bookingpage'>
-      <Route element={<Bookingpage />} path='/Bookingpage'></Route>
-      </Route>
-      
-      <Route element={<Protectrouts />} path='/Selecttheter'>
-      <Route element={<Selecttheter />} path='/Selecttheter'></Route>
-      </Route>
+          <Route element={<Protectrouts />} path='/Bookingpage'>
+            <Route element={<Bookingpage />} path='/Bookingpage'></Route>
+          </Route>
 
-      <Route element={<Protectrouts />} path='/Selectseats'>
-      <Route element={<Selectseats />} path='/Selectseats'></Route>
-      </Route>
+          <Route element={<Protectrouts />} path='/Selecttheter'>
+            <Route element={<Selecttheter />} path='/Selecttheter'></Route>
+          </Route>
 
-      <Route element={<Protectrouts />} path='/ReceiptPage'>
-      <Route element={<ReceiptPage />} path='/ReceiptPage'></Route>
-      </Route>
+          <Route element={<Protectrouts />} path='/Selectseats'>
+            <Route element={<Selectseats />} path='/Selectseats'></Route>
+          </Route>
 
-      <Route element={<Protectrouts />} path='/Addmovies'>
-      <Route element={<Addmovies />} path='/Addmovies'></Route>
-      </Route>
+          <Route element={<Protectrouts />} path='/ReceiptPage'>
+            <Route element={<ReceiptPage />} path='/ReceiptPage'></Route>
+          </Route>
 
-    </Routes>
-   </Router>
+          <Route element={<Protectroutsadmin />} path='/Addmovies'>
+            <Route element={<Addmovies />} path='/Addmovies'></Route>
+          </Route>
+
+        </Routes>
+      </Router>
     </>
   )
 }
