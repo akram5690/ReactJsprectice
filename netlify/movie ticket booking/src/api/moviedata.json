@@ -1,0 +1,261 @@
+{
+  "moviedata": [
+    {
+      "id": "1",
+      "title": "Mission: Impossible – Dead Reckoning Part Two",
+      "text": "Ethan Hunt and his team face their most dangerous mission yet as they battle a powerful AI and unravel global conspiracies.",
+      "image": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTSKmBD1qX8Yvu8D5T9ugFnBE8NcIO1VZYAPMzCFAy9o2jlTo3b",
+      "genre": "Action | Adventure | Thriller",
+      "stars": 8.4,
+      "vote": "245k",
+      "language": "English",
+      "duration": "2h 32m",
+      "releaseDate": "2025-05-23",
+      "director": "Christopher McQuarrie",
+      "cast": [
+        "https://images.mubicdn.net/images/cast_member/2184/cache-2992-1547409411/image-w856.jpg?size=300x",
+        "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQRS4wVKI4uP1j_q2lMWvR5U-sOFwKPS6P5YkpSatgIiY-jLyuw7BcgL27VZCsPG-hAJ2mSyd5p0qXAWxj_YU76eYUxML-CHxgduNGP-PA",
+        "https://upload.wikimedia.org/wikipedia/commons/thumb/9/9f/Stuttgart_-Comic_Con_Germany_2019-_7d_by-RaBoe_037_%28cropped%29.jpg/1024px-Stuttgart_-Comic_Con_Germany_2019-_7d_by-RaBoe_037_%28cropped%29.jpg",
+        "https://encrypted-tbn0.gstatic.com/licensed-image?q=tbn:ANd9GcQbvHJuVtNApf9e3GzcOeS1x83dM1AVmsF8S4J3XBffZPtbSIFA3EuobpDFteTMFUbr4c0SZcbdWQ5Bobg",
+        "https://ntvb.tmsimg.com/assets/assets/225908_v9_bb.jpg?w=360&h=480",
+        "https://www.famousbirthdays.com/faces/rhames-ving-image.jpg"
+      ],
+      "rating": "PG-13",
+      "trailer": "https://www.youtube.com/embed/MissionImpossiblePartTwo"
+    },
+    {
+      "id": "2",
+      "title": "Final Destination: Bloodlines",
+      "text": "A new chapter in the chilling series where death always finds a way.",
+      "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTSRY-xDKrIC0cj-mHHeX9A6K3s3fXn4FjsycWtbRBx2Jd3HcuF",
+      "genre": "Horror | Thriller",
+      "stars": 7.6,
+      "vote": "88k",
+      "language": "English",
+      "duration": "1h 43m",
+      "releaseDate": "2025-05-16",
+      "director": "Zach Lipovsky & Adam Stein",
+      "cast": [
+        "https://upload.wikimedia.org/wikipedia/commons/3/32/Brec_Bassinger_%2852264786282%29_%28cropped%29.jpg",
+        "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRGLvlLivYdeRy84lVKW5L4KPL3S7j_H579PM-fSwLYfLugqOM2saytkex_WWD0Bf0n_SRtn6IAkUFSi1L8PH4U-dwLHAgTSPSv3JR3kw",
+        "https://cdn.prod.website-files.com/667d5b4e3a41d87e1b952f29/6728eb96d1ece921468136ce_Kaitlyn-Santa-Juana.webp",
+        "https://encrypted-tbn2.gstatic.com/licensed-image?q=tbn:ANd9GcRBq_czZjYvIpcvvb0YjK9Uzh2MHszDYORPwmMvZBCqi_304jjBeStkixRMSFe7fTQHZin75E6KZkZHQm4",
+        "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSqOpRUW7Wj3ZXMhQGjuczhxPIiefG7jzFyBs5TUHY-5glsTKJRYiRx3-NuZxCf1mKBEqtNY_HXUtoEV5mkM_9lzA",
+        "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTuG3wS7EE1KH5op0QPKDwA-a-Ljm7AS_bf6FMGiAG5vYN9Bb0G6LmEShbleyi_WYaemqrulSo0euqMTxjFCDmlpw"
+      ],
+      "rating": "R",
+      "trailer": "https://www.youtube.com/embed/FinalDestinationBloodlines"
+    },
+    {
+      "id": "3",
+      "title": "Thunderbolts",
+      "text": "A thrilling Marvel adventure filled with action, betrayal, and mystery as a group of anti-heroes are brought together for a top-secret government mission.",
+      "image": "https://cdn.marvel.com/content/1x/thunderboltsposter.jpeg",
+      "genre": "Action | Drama | Thriller",
+      "stars": 8.2,
+      "vote": "22.1k",
+      "language": "English",
+      "duration": "2h 18m",
+      "releaseDate": "2025-07-25",
+      "director": "Jake Schreier",
+      "cast": [
+        "https://encrypted-tbn3.gstatic.com/licensed-image?q=tbn:ANd9GcRe8riNJfHP9MAYLEVMc9dUP6__AAppSZtBQPF6sbjjd79B732mQJD5dS4FOUFL_BZprp2rkZZf_sScBXM",
+        "https://usercontent.one/wp/manforhimself.com/wp-content/uploads/2024/10/lewis-pullman-man-for-himself-ft.jpg",
+        "https://upload.wikimedia.org/wikipedia/commons/c/c4/Geraldine_Viswanathan_at_the_2025_Sundance_Film_Festival_%28cropped%29.jpg",
+        "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQcr776YZsJOpButx10kFbdx-DU52z1JvvHnbdiv5aXi5SQgFzOQrj0Rksd5aK_HHJ27mpzpero01xoGSw8Tymteg",
+        "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSBgokz8HjB5-xTWU9ItN8_JFjZvp_n3XOrZEw8ViFpwiOwvTHNrw3OZakDXDp365uclclgIxpCqgeM1MYYnXIvxg",
+        "https://static.wikia.nocookie.net/jhmovie/images/e/ee/Sebastian_Stan_by_Gage_Skidmore_2_%28cropped%29.jpg/revision/latest/scale-to-width-down/1200?cb=20240703034939"
+      ],
+      "rating": "PG-13",
+      "trailer": "https://www.youtube.com/embed/your_trailer_id"
+    },
+    {
+      "id": "4",
+      "title": "Captain America: Brave New World",
+      "text": "Sam Wilson takes up the mantle of Captain America to face global threats.",
+      "image": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSaEsSWlNa9yiHe17uXb97r7sOLwNcL_S4Fmxxvw4BigMlp1ssU",
+      "genre": "Action | Superhero",
+      "stars": 7.9,
+      "vote": "195k",
+      "language": "English",
+      "duration": "2h 11m",
+      "releaseDate": "2025-05-03",
+      "director": "Julius Onah",
+      "cast": [
+        "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQYOkzVd6miGvFndCpceklH9kcwfkporxxwQr5bX1uVDBTHURqZrIMIyFP4wEnj0mcuyiF5nX9dyHVDbg9SjUcR4g",
+        "https://variety.com/wp-content/uploads/2020/08/shira-haas-variety-power-of-young-hollywood-1920.jpg?w=1000&h=563&crop=1",
+        "https://a57.foxnews.com/static.foxnews.com/foxnews.com/content/uploads/2023/06/1200/675/harrison-ford.jpg?ve=1&tl=1",
+        "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSv6ujomo8n_gSP1Zgnu3dKZUMtYJv2zmQWAyyj_iQ-12lBgaunGJSPMRVC-xznz7WvaDCFtovHZnLlG1H6ZHEv5g"
+      ],
+      "rating": "PG-13",
+      "trailer": "https://www.youtube.com/embed/CaptainAmericaBraveNewWorld"
+    },
+    {
+      "id": "5",
+      "title": "Sinners",
+      "text": "A horror musical where the consequences of faith and fame collide.",
+      "image": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQh06Okw0JfdwWpuJYX1Ulr-MP6nYlAg0yCulVizsXuZO0ASQTP",
+      "genre": "Horror | Musical | Thriller",
+      "stars": 8.1,
+      "vote": "92k",
+      "language": "English",
+      "duration": "2h 3m",
+      "releaseDate": "2025-04-17",
+      "director": "Ryan Coogler",
+      "cast": [
+        "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQkUz0FLvr7Q3j732IpfS5YBis8PGKtdOH0lqjgRld3KotmY2UTrZ6RMuHhUotgPA0OgYSHjQT7A34raavQgaqzgw",
+        "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRZxjOdgn2utYJRl2d8DUqYDXMvuxLHJTsR_AsTuq6Qobix15BWqp4f0_AycZBWtRC0GHxypgWrkmBW_kRaytg9HA",
+        "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTaeW_4RyzaqRZeqs5FkyZGA11IIKcsn4rVA6uV4DT_ZqQujwkxC9cH58mNJgnF8RLuPlHFNOG6cS23d0s4QWkw4w"
+      ],
+      "rating": "R",
+      "trailer": "https://www.youtube.com/embed/Sinners2025"
+    },
+    {
+      "id": "6",
+      "title": "Bridget Jones: Mad About the Boy",
+      "text": "Bridget returns as a single mother navigating love, life, and loss.",
+      "image": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSfB5bRWYEuTHzeX3rcuvNnk-fVh_JlbFgyjN6TQghdQ_0pW7OY",
+      "genre": "Romance | Comedy | Drama",
+      "stars": 7,
+      "vote": "55k",
+      "language": "English",
+      "duration": "1h 57m",
+      "releaseDate": "2025-03-15",
+      "director": "Michael Morris",
+      "cast": [
+        "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTqJyiacB2w0wdvZG-WGz7BbYLXiFeWmZoBOGk8MrxnZo8EO4R53CNZ3_4IJrAMRms3UWddpfjxADnIBN45Mz1b0Q",
+        "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcReM0AV5sOeLbQvIUYvKH1NWeXM8dnBOBVdSW5NQ8twbqlS271wndo5x9_onTuLNouLDsq4hbM4hBKrpklD60kURA",
+        "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRGE3DdTVeF05PMo_ydTXtLrjstUoXxH9rgTIWMg9SdshgIcx0USMBH8ZUfVvLwZLKP_0e5dhLLnvcY48eij-_StA"
+      ],
+      "rating": "PG-13",
+      "trailer": "https://www.youtube.com/embed/BridgetJonesMadAboutTheBoy"
+    },
+    {
+      "id": "7",
+      "title": "Civil War",
+      "text": "A team of journalists travels across a dystopian U.S. torn apart by civil conflict.",
+      "image": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSkS1wDuI1Nz0ZK1GeMXhjiZ-v21eH5kcHj9dVUqywFkVKHOAEZ",
+      "genre": "Action | Drama | Sci-Fi",
+      "stars": 7.3,
+      "vote": "89.2k",
+      "language": "English",
+      "duration": "1h 49m",
+      "releaseDate": "2024-04-12",
+      "director": "Alex Garland",
+      "cast": [
+        "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSFVipW9scKGtw48sJF4NT_3xPAnhsSEGcTJKkad3C-CGG1_B26lnUJe0lpGxUlwlaa-Xe9ENZQqIfawsIDZ5UqCw",
+        "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRldlk0B5RnLaicH8NRm-SzkG68V3rjjfn-QOaC38LmSLFrH7RnolZMiauMEAMYQtlfcdTX3R7V9y3afaSS5LjpxQ",
+        "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSrp7s6Tkn97Z1gtkbTJIjqoPdq04bw78ALsnL3WXWsgE3KmKR_",
+        "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSEB4T8ChRjgviTGTI6jtdukUc_U-Ay-0aZTa_Q_4Bi69CM-denZqKGsz-Cbt-ylgA8hoLySABLqtCaR0GYFEhTDA"
+      ],
+      "rating": "R",
+      "trailer": "https://www.youtube.com/embed/aDyQxtg0V2w"
+    },
+    {
+      "id": "8",
+      "title": "Dog Man",
+      "text": "A fun and action-packed animated adventure based on the bestselling comic.",
+      "image": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSdJheLKJm4e7pFzyFqSJG9WoD49KELOqT9skEzfGscwavcu0OY",
+      "genre": "Animation | Comedy | Family",
+      "stars": 7.2,
+      "vote": "67k",
+      "language": "English",
+      "duration": "1h 35m",
+      "releaseDate": "2025-02-02",
+      "director": "Peter Hastings",
+      "cast": [
+        "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQJcNPn-4Z_zjn1gDy5tv1OYkLq6Z4h4SKdbUMGq3n1m2v2J284TtGDOOB9DWb7nlyiXFfbUfFnU8HlhjPIYv2usA",
+        "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQIwiMaV7COYgxSyQcnoT-7dygdazWFaRLa669SY20rIGrxRfAjBnx-L1RJz-n3DMnhbk77X3O1a-LDYtYUd8I_iA"
+      ],
+      "rating": "PG",
+      "trailer": "https://www.youtube.com/embed/DogManMovie"
+    },
+    {
+      "id": "9",
+      "title": "Ne Zha 2",
+      "text": "The mythical child-hero returns in a sequel that blends epic fantasy and family drama.",
+      "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR4j9cIm5c5Kw3bHEfNh-zcFVc7bZhx9B6A7_SS9htjSd9D1TW5",
+      "genre": "Animation | Fantasy | Action",
+      "stars": 8.5,
+      "vote": "210k",
+      "language": "Mandarin",
+      "duration": "1h 55m",
+      "releaseDate": "2025-01-29",
+      "director": "Jiaozi",
+      "cast": [
+        "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRB7LKIWwnXiLXDpU0ACLld58HNHoL8vTRnmrEwZO6w2n2lsceJhNChNcMXzX5Yzjpe1Q4&usqp=CAU",
+        "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTPZBSJesfaoq6TlVsUoyPnojHr3bEoBgLeTrh7O3FiAtxGL2xmMYcGWN3yXYHMBEEmNUb_iKf8o7Q-17N782e5kfbfvzn8FG0jMRliKw"
+      ],
+      "rating": "PG",
+      "trailer": "https://www.youtube.com/embed/NeZha2Trailer"
+    },
+    {
+      "id": "10",
+      "title": "Dune: Part Two",
+      "text": "Paul Atreides unites with the Fremen and begins a war of revenge against those who destroyed his family.",
+      "image": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRBu8Gzdygf5OOqBJUIJ3-ZxiPbLh62OhvLmtOvuR7x2gF3DucU",
+      "genre": "Action | Adventure | Sci-Fi",
+      "stars": 8.7,
+      "vote": "315k",
+      "language": "English",
+      "duration": "2h 46m",
+      "releaseDate": "2024-03-01",
+      "director": "Denis Villeneuve",
+      "cast": [
+        "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRAfwwSjnXb9Ohgddqzt4oN16pwNKwrseo8GqOGPS7-sn5qXYDf4hzgiSzLu8BTDpq1mSlXeNFojFmmWF1NXogfd-w7B9DN3YW9tf9ll_g",
+        "https://www.nme.com/wp-content/uploads/2024/01/Zendaya-main-696x442.jpg",
+        "https://static.wikia.nocookie.net/disney/images/4/48/Florence_Pugh.jpeg/revision/latest?cb=20221220235821",
+        "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTHvf-XFqIwUlyyJcY0FJZFRmMMiZjy2kgsCx0bq6wMc9XH5cFZDW5sJnYFIlA3pZUa6pXDqTdh8Zo8kVejRE9DKg"
+      ],
+      "rating": "PG-13",
+      "trailer": "https://www.youtube.com/embed/Way9Dexny3w"
+    },
+    {
+      "id": "11",
+      "title": "Godzilla x Kong: The New Empire",
+      "text": "Godzilla and Kong must team up against a colossal new threat hidden beneath the Earth's surface.",
+      "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQO-TX2MibTDhpCTKoKRPfnCv_6Y0_VJnTCjRt8WUMt321jIgKN",
+      "genre": "Action | Sci-Fi | Fantasy",
+      "stars": 6.8,
+      "vote": "115k",
+      "language": "English",
+      "duration": "1h 55m",
+      "releaseDate": "2024-03-29",
+      "director": "Adam Wingard",
+      "cast": [
+        "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRKvjteflxaaRDILrv7Mw4Pj37PO8v7lqI4AHrxONH8ORme1fWTHbM8clGzdcGJ1rGV4wJFiqkxOgN-i64sf2z3GA",
+        "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTc957-6AE1VpDPERHdxD6ZydYkBSmccOnzoL_-y7REwr8gLdo8h-6tLyrTDgoA-qXzTR6g4hhX_US1sl3dEuWmbw",
+        "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRRP8drbyTDt-M3XbpOnuVkdruXbOvFODRvLFE6KU-2onREpdKka2UZjJ3Iji8-Ra4P-5ePWWMJrx77gTi84p6dmA",
+        "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQOc4EcvKdWKqybVD77GXJV2SvrHePuijocIu_XCXBhGQiqI7V_XSOIgOi16fUECnCUTFMfJBUFnbgHstzSrl2-zQ",
+        "https://encrypted-tbn1.gstatic.com/licensed-image?q=tbn:ANd9GcTad2pCys7iqLW99KXcDaf6Ai2ZCv1kOs--oXK_RSfMk3ASe9KQoPKdeg0xWBB3ts2I0qPeKDOeG1OmrTw",
+        "https://m.media-amazon.com/images/M/MV5BYjFlODgwZDUtNzkyNi00ZDQ5LTllMjQtYmFiOGMwMDRiYzdhXkEyXkFqcGc@._V1_.jpg",
+        "https://s.abcnews.com/images/GMA/210906_gma_chen_hpMain_16x9_1600.jpg"
+      ],
+      "rating": "PG-13",
+      "trailer": "https://www.youtube.com/embed/qqrpMRDuPfc"
+    },
+    {
+      "id": "12",
+      "title": "Kalki 2898 AD",
+      "text": "A futuristic reimagining of Hindu mythology set in a dystopian world.",
+      "image": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcS7GJtGGybUwdZIW9QlQoq_HAvlqiSx73qWFjXr74FjrFMtmveR",
+      "genre": "Sci-Fi | Action | Mythology",
+      "stars": 8.3,
+      "vote": "120k",
+      "language": "Hindi",
+      "duration": "3h 1m",
+      "releaseDate": "2024-06-27",
+      "director": "Nag Ashwin",
+      "cast": [
+        "https://i.ndtvimg.com/i/2018-03/prabhas-fb_650x400_71520842435.jpg",
+        "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTe8VoKFzKlFK7hZwqoYpz9uVW8wNdsXD0b-zhdAdjN3-6mrkuJJa55WdV3timBPfpHUCqlkojzRORFp9u5B7MWg_I55qCQXWcD6VUMgA",
+        "https://www.deccanchronicle.com/h-upload/2024/11/04/1859042-dulquersalmaan.jpg",
+        "https://images.hindustantimes.com/img/2024/08/06/1600x900/kamal_haasan_1722944223655_1722944224047.webp",
+        "https://www.bollywoodhungama.com/wp-content/uploads/2021/06/Deepika-Padukone-launches-A-Chain-of-Wellbeing-on-her-social-media1.jpg",
+        "https://ntvb.tmsimg.com/assets/assets/4153_v9_bc.jpg"
+      ],
+      "rating": "UA",
+      "trailer": "https://www.youtube.com/embed/pDxn0Xfqkgw"
+    }
+  ]
+}

@@ -97,26 +97,22 @@ img {
 }
 
 .track {
-  cursor: pointer;
 	--size: clamp(200px, 40vmin, 50rem);
 	height: var(--size);
 	/* width: 1%; */
 	display: flex;
+  /* justify-content: end; */
 	overflow: overlay;
 	gap: var(--size-4);
 	list-style-type: none;
   margin: 0;
-	padding: var(--size-4);
+	padding: var(--size-4) 0%;
 	scroll-snap-type: x mandatory;
 	-webkit-mask: radial-gradient(#0000 0 30%, #000 30.5%) 50% calc(var(--size) * 0.5) / 300% 100%,
 								linear-gradient(0deg, black, black) 50% 0 / 100% var(--size-4) no-repeat,
 								linear-gradient(0deg, black, black) 50% 100% / 100% var(--size-4) no-repeat;
-scrollbar-width: thin;
-scrollbar-color: #c9c8c896 transparent;
+
 }
-
-
-
 
 .track__item {
 	height: 100%;

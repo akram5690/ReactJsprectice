@@ -1,0 +1,9 @@
+.theater-card:hover {
+  background-color: #f0f8ff;
+  transition: 0.3s;
+}
+.btn-outline-primary.active {
+  background-color: #0d6efd;
+  color: white;
+  border-color: #0d6efd;
+}

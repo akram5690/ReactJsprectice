@@ -1,0 +1,26 @@
+{
+  "regdata": [
+    {
+      "id": "566c"
+    },
+    {
+      "id": "d06a",
+      "name": "akram",
+      "email": "shaikhakram5690@gmail.com",
+      "pass": "56903586"
+    },
+    {
+      "id": "f72b",
+      "name": "praful",
+      "email": "sana@gmail.com",
+      "pass": "5692303",
+      "checked": ""
+    },
+    {
+      "id": "7576",
+      "name": "akram",
+      "email": "shaikhakram5690@gmail.com",
+      "pass": "56903586"
+    }
+  ]
+}
