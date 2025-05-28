@@ -32,10 +32,9 @@ const Login = () => {
           pass: ""
         })
         navigate("/") // Upon login you will be directed to the home page
-      } else {
-        alert("Invalid email or password")
+      } else if (confirm("Invalid email or password. Please register.")) {
+        navigate("/Regestar")
       }
-
     } catch (error) {
       console.error("Login error:", error);
       alert("Something went wrong. Please try again.");
