@@ -28,18 +28,12 @@ const Navigationbar = () => {
             {
               adminpanel ? (
                 <>                
-                <li className="nav-item">
-                  <NavLink className="nav-link text-dark" to="/">Home</NavLink>
-                </li>
                   <li className="nav-item">
                     <NavLink className="nav-link text-dark" to="/Addmovies">Addmovies</NavLink>
                   </li>
                 </>
               ) : (
                 <>
-                  <li className="nav-item">
-                    <NavLink className="nav-link text-dark" to="/">Home</NavLink>
-                  </li>
                 </>
               )}
 
