@@ -1,6 +1,8 @@
 import React, { useEffect, useState } from 'react';
+import { useNavigate } from 'react-router-dom';
 
 const Product = () => {
+  const navigate = useNavigate()
   const [product, setProduct] = useState([]);
 
   useEffect(() => {
@@ -10,14 +12,20 @@ const Product = () => {
   }, []);
 
   const handleSubmit = (newItem) => {
-    let getdata = JSON.parse(localStorage.getItem("stproduct")) || [];
+  const data = JSON.parse(sessionStorage.getItem("userdata"));
 
+  if (data) {
+    let getdata = JSON.parse(localStorage.getItem("stproduct")) || [];
     let newdata = [...getdata, newItem];
-    if (confirm("Added to cart:", newItem)) {
-        localStorage.setItem("stproduct", JSON.stringify(newdata));       
+    localStorage.setItem("stproduct", JSON.stringify(newdata));
+    alert("Product added to cart successfully!");
+  } else {
+    if (confirm("Please login first to add products to your cart. Go to login page?")) {
+      navigate("/Login");
     }
-    
-  };
+  }
+};
+
 
   return (
     <div className="container my-5">
@@ -26,10 +34,10 @@ const Product = () => {
         {product.map(item => (
           <div className="col-md-3 mb-4" key={item.id}>
             <div className="card h-100 shadow-sm">
-              <img 
-                src={item.image} 
-                className="card-img-top p-3" 
-                alt={item.title} 
+              <img
+                src={item.image}
+                className="card-img-top p-3"
+                alt={item.title}
                 style={{ height: "250px", objectFit: "contain" }}
               />
               <div className="card-body d-flex flex-column">
