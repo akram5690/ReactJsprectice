@@ -81,8 +81,6 @@
 @media (max-width: 1000px) {
   .style-img {
     width: 100% !important;
-  }
-  .style-img {
     height: 300px !important;
   }
 }
@@ -99,11 +97,29 @@
 
 @media (max-width: 576px) {
   .style-img {
-    height: 180px;
+    height: 500px !important;
   }
 
   .style-title {
-    font-size: 0.85rem;
+    font-size: 1rem !important;
+  }
+  .star {
+    font-size: 0.9rem !important;
+
+  }
+}
+@media (max-width: 440px) {
+  .style-img {
+    height: 100% !important;
+    width: 100% !important;
+  }
+
+  .style-title {
+    font-size: 1rem !important;
+  }
+  .star {
+    font-size: 0.9rem !important;
+
   }
 }
 
